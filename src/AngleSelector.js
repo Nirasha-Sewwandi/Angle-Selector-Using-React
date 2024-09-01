@@ -25,7 +25,7 @@ const AngleSelector = () => {
         
         {/* Input for entering the angle */}
         <div className="input-container">
-          <label htmlFor="angle-input">Angle:</label>
+          <label htmlFor="angle-input">Set Angle (0° to 360°):</label>
           <input
             id="angle-input"
             type="number"
@@ -37,6 +37,8 @@ const AngleSelector = () => {
         </div>
 
         {/* Slider for selecting the angle */}
+        <label htmlFor="angle-input">Adjust Angle:</label>
+
         <input
           type="range"
           min="0"
@@ -45,6 +47,7 @@ const AngleSelector = () => {
           onChange={handleSliderChange}
           className="slider"
         />
+        <label htmlFor="angle-input">Select a Preset Angle:</label>
 
         {/* Radio buttons for common angles */}
         <div className="radio-buttons">

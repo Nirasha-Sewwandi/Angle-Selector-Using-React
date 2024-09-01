@@ -1,27 +1,31 @@
 body {
-  background-color: #d8e2c4; /* Changed to a light gray-blue background */
+  background-color: #d8e2c4; /* Soft green background */
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Arial', sans-serif; /* Added a font-family for a cleaner look */
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
 }
+
 h1 {
   text-align: center; /* Centers the h1 text horizontally */
-  color: #141317; /* Primary accent color for the heading */
-  font-size: 24px; /* Font size for the heading */
-  margin-bottom: 20px; /* Adds some spacing below the heading */
+  color: #141317; /* Dark primary color for heading */
+  font-size: 24px; /* Slightly larger font size for the heading */
+  margin-bottom: 20px; /* Adds spacing below the heading */
   font-weight: bold; /* Makes the text bold */
+  text-transform: uppercase; /* Uppercase for a modern look */
+  letter-spacing: 1px; /* Adds spacing between letters */
 }
+
 .angle-selector {
-  background-color: #ffffff; /* Changed to white for better contrast */
-  width: 500px;
+  background-color: #ffffff; /* White background for better contrast */
+  width: 500px; /* Fixed width for consistent layout */
   padding: 30px; /* Increased padding for better spacing */
-  border-radius: 12px; /* Increased border radius for softer corners */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect for more depth */
-  border: 2px solid #d1d5db; /* Added a light border for definition */
-  transition: transform 0.3s ease; /* Added a smooth transition effect */
+  border-radius: 12px; /* Rounded corners for a softer appearance */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border: 2px solid #d1d5db; /* Light border for visual definition */
+  transition: transform 0.3s ease; /* Smooth scaling transition */
 }
 
 .angle-selector:hover {
@@ -41,20 +45,20 @@ h1 {
 }
 
 .angle-selector label {
-  margin-right: 12px; /* Slightly increased margin for spacing */
-  color: #555; /* Changed label color to a darker gray for better contrast */
-  font-weight: bold; /* Made labels bold */
+  margin-right: 12px; /* Spacing between label and input */
+  color: #555; /* Dark gray color for labels */
+  font-weight: bold; /* Bold text for labels */
 }
 
 .angle-selector input[type="number"] {
   margin: 0;
-  padding: 8px; /* Increased padding for better usability */
-  text-align: center;
-  font-size: 16px; /* Slightly increased font size for readability */
-  border: 1px solid #ccc; /* Added a border for input fields */
+  padding: 8px; /* Added padding for a better click area */
+  text-align: center; /* Centered text alignment */
+  font-size: 16px; /* Increased font size for readability */
+  border: 1px solid #ccc; /* Light border for input fields */
   border-radius: 4px; /* Rounded corners for input fields */
-  outline: none;
-  transition: border-color 0.3s ease; /* Smooth transition on focus */
+  outline: none; /* Removed default outline */
+  transition: border-color 0.3s ease; /* Smooth border transition on focus */
 }
 
 .angle-selector input[type="number"]:focus {
@@ -62,15 +66,47 @@ h1 {
 }
 
 .angle-selector .slider {
-  width: 100%; /* Made slider full width */
-  margin: 20px 0; /* Adjusted margin for uniform spacing */
+  width: 100%; /* Full width slider for better control */
+  margin: 20px 0; /* Uniform spacing around the slider */
+  appearance: none; /* Removes default browser styling */
+  background-color: #ddd; /* Light gray slider track */
+  height: 8px; /* Slider track height */
+  border-radius: 5px; /* Rounded track corners */
+}
+
+.angle-selector .slider::-webkit-slider-thumb {
+  background-color: #6c63ff; /* Purple thumb */
+  border-radius: 50%; /* Rounded thumb */
+  height: 20px; /* Thumb height */
+  width: 20px; /* Thumb width */
+  border: 2px solid #fff; /* White border around thumb */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.angle-selector .slider::-webkit-slider-thumb:hover {
+  background-color: #5a54d1; /* Darker purple on hover */
+}
+
+.angle-selector .slider::-moz-range-thumb {
+  background-color: #6c63ff; /* Purple thumb for Firefox */
+  border-radius: 50%; /* Rounded thumb */
+  height: 20px; /* Thumb height */
+  width: 20px; /* Thumb width */
+  border: 2px solid #fff; /* White border around thumb */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.angle-selector .slider::-moz-range-thumb:hover {
+  background-color: #5a54d1; /* Darker purple on hover */
 }
 
 .angle-selector .radio-buttons {
   display: flex;
-  justify-content: space-between; /* Changed to space-between for better distribution */
+  justify-content: space-between; /* Spacing between radio buttons */
   width: 90%;
-  padding-bottom: 25px; /* Increased padding for better spacing */
+  padding-bottom: 25px; /* Padding for better spacing */
 }
 
 .angle-selector .radio-button {
@@ -78,15 +114,20 @@ h1 {
 }
 
 .angle-selector .radio-button label {
-  cursor: pointer; /* Changed cursor to pointer on hover */
-  color: #333; /* Changed label color to a darker tone */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #333; /* Darker color for better visibility */
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
+.angle-selector .radio-button input[type="radio"] {
+  margin-right: 5px; /* Margin between radio button and label */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
 .angle-selector .radio-button input[type="radio"]:checked + label {
-  color: #6c63ff; /* Color change on checked radio button */
+  color: #6c63ff; /* Purple color on checked radio button */
 }
 
 .angle-selector .radio-button input[type="radio"]:hover + label {
-  color: #6c63ff; /* Color change on hover for better user interaction */
+  color: #6c63ff; /* Color change on hover for better interactivity */
 }

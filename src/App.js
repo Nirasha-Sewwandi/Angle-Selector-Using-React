@@ -6,7 +6,7 @@ import AngleSelector from './AngleSelector';
 function App() {
   return (
     <div className="App">
-      <h1>Angle Selector Using React</h1>
+      <h1>SELECT AN ANGLE</h1>
       <AngleSelector />
     </div>
   );
