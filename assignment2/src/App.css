@@ -1,0 +1,92 @@
+body {
+  background-color: #d8e2c4; /* Changed to a light gray-blue background */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif; /* Added a font-family for a cleaner look */
+}
+h1 {
+  text-align: center; /* Centers the h1 text horizontally */
+  color: #141317; /* Primary accent color for the heading */
+  font-size: 24px; /* Font size for the heading */
+  margin-bottom: 20px; /* Adds some spacing below the heading */
+  font-weight: bold; /* Makes the text bold */
+}
+.angle-selector {
+  background-color: #ffffff; /* Changed to white for better contrast */
+  width: 500px;
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 12px; /* Increased border radius for softer corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect for more depth */
+  border: 2px solid #d1d5db; /* Added a light border for definition */
+  transition: transform 0.3s ease; /* Added a smooth transition effect */
+}
+
+.angle-selector:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.angle-selector-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.angle-selector .input-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0; /* Increased margin for better spacing */
+}
+
+.angle-selector label {
+  margin-right: 12px; /* Slightly increased margin for spacing */
+  color: #555; /* Changed label color to a darker gray for better contrast */
+  font-weight: bold; /* Made labels bold */
+}
+
+.angle-selector input[type="number"] {
+  margin: 0;
+  padding: 8px; /* Increased padding for better usability */
+  text-align: center;
+  font-size: 16px; /* Slightly increased font size for readability */
+  border: 1px solid #ccc; /* Added a border for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  outline: none;
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.angle-selector input[type="number"]:focus {
+  border-color: #6c63ff; /* Highlight border on focus */
+}
+
+.angle-selector .slider {
+  width: 100%; /* Made slider full width */
+  margin: 20px 0; /* Adjusted margin for uniform spacing */
+}
+
+.angle-selector .radio-buttons {
+  display: flex;
+  justify-content: space-between; /* Changed to space-between for better distribution */
+  width: 90%;
+  padding-bottom: 25px; /* Increased padding for better spacing */
+}
+
+.angle-selector .radio-button {
+  margin: 0 15px; /* Increased margin for better spacing */
+}
+
+.angle-selector .radio-button label {
+  cursor: pointer; /* Changed cursor to pointer on hover */
+  color: #333; /* Changed label color to a darker tone */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.angle-selector .radio-button input[type="radio"]:checked + label {
+  color: #6c63ff; /* Color change on checked radio button */
+}
+
+.angle-selector .radio-button input[type="radio"]:hover + label {
+  color: #6c63ff; /* Color change on hover for better user interaction */
+}
