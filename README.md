@@ -1,2 +1,2 @@
-# Angle-Selector-Using-React
-CO528 - Assignment 2
+# CO528 - Assignment 2
+
