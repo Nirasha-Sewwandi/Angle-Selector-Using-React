@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Angle-Selector-Using-React/static/css/main.49752e82.css",
-    "main.js": "/Angle-Selector-Using-React/static/js/main.f935ac58.js",
+    "main.css": "/Angle-Selector-Using-React/static/css/main.e9821c0f.css",
+    "main.js": "/Angle-Selector-Using-React/static/js/main.3683b8f1.js",
     "static/js/453.29211244.chunk.js": "/Angle-Selector-Using-React/static/js/453.29211244.chunk.js",
     "static/media/logo.svg": "/Angle-Selector-Using-React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Angle-Selector-Using-React/index.html",
-    "main.49752e82.css.map": "/Angle-Selector-Using-React/static/css/main.49752e82.css.map",
-    "main.f935ac58.js.map": "/Angle-Selector-Using-React/static/js/main.f935ac58.js.map",
+    "main.e9821c0f.css.map": "/Angle-Selector-Using-React/static/css/main.e9821c0f.css.map",
+    "main.3683b8f1.js.map": "/Angle-Selector-Using-React/static/js/main.3683b8f1.js.map",
     "453.29211244.chunk.js.map": "/Angle-Selector-Using-React/static/js/453.29211244.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49752e82.css",
-    "static/js/main.f935ac58.js"
+    "static/css/main.e9821c0f.css",
+    "static/js/main.3683b8f1.js"
   ]
 }
